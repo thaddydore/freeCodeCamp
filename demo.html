@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+  }
+  nav{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: darkgreen;
+  justify-content:space-between;
+}
+
+.menu-logo{
+  display: flex;
+  padding: 10px 10px 10px 20px;
+}
+
+.logo{
+  /* display: none; */
+}
+
+.logo img{
+  height: 25px;
+}
+
+.menu{
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid #fff;
+  padding: 5px;
+  width: 80px;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 5px;
+  display: none;
+
+}
+.menu:hover{
+  cursor: pointer;
+  color: black;
+  background-color: #fff;
+}
+
+.menu-list{
+  display: flex;
+
+}
+.menu-list a{
+  display: block;
+  color: #fff;
+  width: 100px;
+  text-align: center;
+  padding: 15px 0;
+  text-decoration: none;
+}
+
+.menu-list a:hover{
+  background-color: #fff;
+  color: green;
+}
+
+@media screen and (max-width: 680px){
+  nav{
+    flex-direction: column;
+  }
+
+  .menu{
+    display: block;
+  }
+  .menu-logo{
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-list{
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+  .menu-list a{
+    width: 100%;
+  }
+
+  .appear{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+</style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="menu-logo">
+        <div class="logo">
+          <a href="#"><img src="images/freecodecamp_logo.svg" alt="learn to code javascript on freeCodeCamp"></a>
+        </div>
+        <div class="menu">Menu</div>
+      </div>
+      <div class="menu-list">
+        <a href="#">Curriculum</a>
+        <a href="#">Forum</a>
+        <a href="#">News</a>
+        <a href="#">Sign in</a>
+      </div>
+    </nav>
+  </header>
+</body>
+<script>
+  function open(){
+    let menuLists = document.querySelectorAll(".menu-list");
+    menuLists.forEach(list => {
+      list.classList.toggle("appear");
+    });
+  }
+  document.querySelector(".menu").addEventListener("click", open)
+</script>
+</html>

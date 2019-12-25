@@ -1,0 +1,275 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, img {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#links:hover {
+  background: "fff"
+}
+
+
+/*MY CODE */
+nav{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: darkgreen;
+  justify-content:space-between;
+}
+
+.menu-logo{
+  display: flex;
+  padding: 10px 10px 10px 20px;
+}
+
+.logo{
+  /* display: none; */
+}
+
+.logo img{
+  height: 25px;
+}
+
+.menu{
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid #fff;
+  padding: 5px;
+  width: 80px;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 5px;
+  display: none;
+
+}
+.menu:hover{
+  cursor: pointer;
+  color: black;
+  background-color: #fff;
+}
+
+.menu-list{
+  display: flex;
+
+}
+.menu-list a{
+  display: block;
+  color: #fff;
+  width: 100px;
+  text-align: center;
+  padding: 15px 0;
+  text-decoration: none;
+}
+
+.menu-list a:hover{
+  background-color: #fff;
+  color: green;
+}
+
+.caption {
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #333333;
+  margin: 21px 0 45px;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+	margin-bottom: 80px;
+}
+
+.products div img {
+	display: inline;
+	width: 100px;
+	height: 100px;
+	margin-bottom: 10px;
+}
+
+.products div {
+	text-align: center;
+  font-size: 24px;
+}
+
+.start-button a{
+  display: block;
+  width: 60%;
+  height: 70px;
+  text-align: center;
+  margin: auto;
+  border: 2px solid #ffac33;
+  border-radius: 5px;
+  padding: 15px 0;
+  background-color: #ffac33;
+  background-image: linear-gradient(#ffcc4d, #ffac33);
+  font-size: 40px;
+  text-decoration: none;
+  color: #292f33;
+}
+
+
+.feature h3{
+  text-align: center;
+  color: #333333;
+  font-size: 32px;
+  margin: 45px 0 15px 0;
+}
+
+.feature img{
+  margin: auto;
+  width: 60%;
+}
+
+hr{
+  margin: 45px 0 80px 0;
+}
+
+.launch{
+  font-size: 32px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonial-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+	margin-bottom: 80px;
+}
+
+.testimonial-container div {
+	width: 23.3%;
+	text-align: center;
+}
+
+.testimonial-container div img {
+	display: inline;
+	height: 200px;
+	width: 200px;
+	border-radius: 10px;
+	margin-bottom: 5px;
+}
+.testimonial-container div p {
+	text-align: center;
+  color: #333333;
+  line-height: 1.42857143;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.testimonial-container div h5{
+	font-size: 26px;
+  color: #333333;
+}
+
+
+.skills-container h6{
+  font-size: 32px;
+  color: #333333;
+  text-align: center;
+  margin: 0 auto 40px auto;
+  width: 100%;
+}
+
+.skills {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.skills div{
+width: 25%;
+}
+
+.skills div img{
+display: inline;
+width: 200px;
+height: 150px;
+margin-bottom: 20px;
+}
+
+.information{
+  margin: auto;
+  width: 73%;
+}
+.information p {
+  font-size: 24px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 18px;
+}
+.information p:first-child{
+  font-size: 28px;
+}
+
+.information p a {
+  color: darkgreen;
+}
+
+.information p:last-child{
+  margin-bottom: 50px;
+}
+
+.footer{
+	margin-bottom: 50px;
+}
